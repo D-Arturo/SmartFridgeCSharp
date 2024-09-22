@@ -1,5 +1,13 @@
 ﻿namespace SmartFridge;
 
-public class Item(string name, DateTime expirationDate)
+public class Item
 {
+    public string Name { get; }
+    public DateTime ExpirationDate { get; }
+
+    public Item(string name, DateTime expirationDate)
+    {
+        Name = name;
+        ExpirationDate = expirationDate;
+    }
 }
