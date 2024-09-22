@@ -3,6 +3,7 @@
 public class SmartFridge
 {
     private readonly List<Item> _items;
+    private bool _isDoorOpen;
 
     public SmartFridge(List<Item> items)
     {
@@ -21,7 +22,7 @@ public class SmartFridge
 
     public void OpenDoor()
     {
-        
+        _isDoorOpen = true;
     }
 
     public void AddItem(Item item)
@@ -31,11 +32,11 @@ public class SmartFridge
 
     public void CloseDoor()
     {
-        throw new NotImplementedException();
+        _isDoorOpen = false;
     }
 
     public bool IsDoorOpen()
     {
-        return true;
+        return _isDoorOpen;
     }
 }
