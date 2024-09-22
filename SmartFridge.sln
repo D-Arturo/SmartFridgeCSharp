@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartFridge", "SmartFridge\SmartFridge.csproj", "{EC5EF8B6-21C3-4433-9311-0C411F89C0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartFridge.Tests", "SmartFridge.Tests\SmartFridge.Tests.csproj", "{38B1E069-0BD9-43B3-8D43-99AA71B9C717}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC5EF8B6-21C3-4433-9311-0C411F89C0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5EF8B6-21C3-4433-9311-0C411F89C0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5EF8B6-21C3-4433-9311-0C411F89C0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5EF8B6-21C3-4433-9311-0C411F89C0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B1E069-0BD9-43B3-8D43-99AA71B9C717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B1E069-0BD9-43B3-8D43-99AA71B9C717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B1E069-0BD9-43B3-8D43-99AA71B9C717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B1E069-0BD9-43B3-8D43-99AA71B9C717}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
