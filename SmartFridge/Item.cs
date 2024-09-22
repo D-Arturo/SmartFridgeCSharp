@@ -14,6 +14,6 @@ public class Item
 
     public int CalculateDaysUntilExpiration()
     {
-        return 0;
+        return (ExpirationDate - DateTime.Today).Days;
     }
 }
