@@ -44,4 +44,15 @@ public class SmartFridgeShould
         
         Assert.False(smartFridge.IsDoorOpen());
     }
+
+    [Fact]
+    public void DisplayEmptyFridgeState()
+    {
+        var items = new List<Item>();
+        var smartFridge = new SmartFridge(items);
+        
+        var displayFridgeState = smartFridge.DisplayFridgeState();
+        
+        Assert.Empty(displayFridgeState);
+    }
 }
