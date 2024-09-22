@@ -33,4 +33,15 @@ public class SmartFridgeShould
         
         Assert.Contains(lettuce, items);
     }
+    
+    [Fact]
+    public void CloseDoor()
+    {
+        var smartFridge = new SmartFridge();
+        
+        smartFridge.OpenDoor();
+        smartFridge.CloseDoor();
+        
+        Assert.False(smartFridge.IsDoorOpen());
+    }
 }
