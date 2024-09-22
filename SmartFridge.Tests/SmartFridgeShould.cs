@@ -66,4 +66,18 @@ public class SmartFridgeShould
 
         Assert.Equal("Tomato Can: 0 days remaining", displayFridgeState);
     }
+    
+    [Fact]
+    public void DisplayFridgeWithSingleItemExpiringInTheFutureState()
+    {
+        const string almondBagName = "Almond Bag";
+        const int daysUntilExpiration = 3;
+        var almondBag = new Item(almondBagName, DateTime.Today.AddDays(daysUntilExpiration));
+        var items = new List<Item> { almondBag };
+        var smartFridge = new SmartFridge(items);
+
+        var displayFridgeState = smartFridge.DisplayFridgeState();
+
+        Assert.Equal($"{almondBag}: {daysUntilExpiration} days remaining", displayFridgeState);
+    }
 }
