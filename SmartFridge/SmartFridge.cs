@@ -9,7 +9,7 @@ public class SmartFridge
 
     public void OpenDoor()
     {
-        throw new NotImplementedException();
+        
     }
 
     public void AddItem(Item item)
@@ -24,6 +24,6 @@ public class SmartFridge
 
     public bool IsDoorOpen()
     {
-        throw new NotImplementedException();
+        return true;
     }
 }
