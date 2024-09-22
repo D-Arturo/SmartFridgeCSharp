@@ -10,7 +10,7 @@ public class SmartFridgeShould
     public void DisplayFridgeStateAfterAddingOneItem()
     {
         var smartFridge = new SmartFridge();
-        var lettuce = new Item("Lettuce", DateTime.Today, DateTime.Today, "opened");
+        var lettuce = new Item("Lettuce", DateTime.Today);
 
         smartFridge.OpenDoor();
         smartFridge.AddItem(lettuce);

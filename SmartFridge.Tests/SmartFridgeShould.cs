@@ -25,7 +25,7 @@ public class SmartFridgeShould
     {
         var items = new List<Item>();
         var smartFridge = new SmartFridge(items);
-        var lettuce = new Item("Lettuce", DateTime.Today, DateTime.Today, "opened");
+        var lettuce = new Item("Lettuce", DateTime.Today);
 
         smartFridge.OpenDoor();
         smartFridge.AddItem(lettuce);
@@ -58,7 +58,7 @@ public class SmartFridgeShould
     [Fact]
     public void DisplayFridgeWithSingleItemState()
     {
-        var tomatoCan = new Item("Tomato Can", DateTime.Today, DateTime.Today, "opened");
+        var tomatoCan = new Item("Tomato Can", DateTime.Today);
         var items = new List<Item> { tomatoCan };
         var smartFridge = new SmartFridge(items);
 
