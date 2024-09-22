@@ -17,7 +17,13 @@ public class SmartFridge
 
     public string DisplayFridgeState()
     {
-        return _items.Count > 0 ? "Tomato Can: 0 days remaining" : "";
+        if (_items.Count == 0)
+        {
+            return string.Empty;
+        }
+
+        var item = _items.First();
+        return $"{item.Name}: 0 days remaining";
     }
 
     public void OpenDoor()
