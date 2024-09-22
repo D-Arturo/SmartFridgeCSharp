@@ -10,4 +10,10 @@ public class Item
         Name = name;
         ExpirationDate = expirationDate;
     }
+
+
+    public int CalculateDaysUntilExpiration()
+    {
+        return 0;
+    }
 }

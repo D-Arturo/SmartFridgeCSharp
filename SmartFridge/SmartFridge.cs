@@ -23,7 +23,7 @@ public class SmartFridge
         }
 
         var item = _items.First();
-        return $"{item.Name}: 0 days remaining";
+        return $"{item.Name}: {item.CalculateDaysUntilExpiration()} days remaining";
     }
 
     public void OpenDoor()
