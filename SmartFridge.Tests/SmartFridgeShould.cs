@@ -78,6 +78,6 @@ public class SmartFridgeShould
 
         var displayFridgeState = smartFridge.DisplayFridgeState();
 
-        Assert.Equal($"{almondBag}: {daysUntilExpiration} days remaining", displayFridgeState);
+        Assert.Equal($"{almondBagName}: {daysUntilExpiration} days remaining", displayFridgeState);
     }
 }
