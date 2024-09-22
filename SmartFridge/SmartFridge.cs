@@ -17,7 +17,7 @@ public class SmartFridge
 
     public string DisplayFridgeState()
     {
-        throw new NotImplementedException();
+        return "";
     }
 
     public void OpenDoor()
