@@ -2,9 +2,11 @@
 
 public class SmartFridge
 {
+    private readonly List<Item> _items;
+
     public SmartFridge(List<Item> items)
     {
-        throw new NotImplementedException();
+        _items = items;
     }
 
     public SmartFridge()
@@ -24,7 +26,7 @@ public class SmartFridge
 
     public void AddItem(Item item)
     {
-        throw new NotImplementedException();
+        _items.Add(item);
     }
 
     public void CloseDoor()
