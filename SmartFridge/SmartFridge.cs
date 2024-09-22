@@ -21,4 +21,9 @@ public class SmartFridge
     {
         throw new NotImplementedException();
     }
+
+    public bool IsDoorOpen()
+    {
+        throw new NotImplementedException();
+    }
 }

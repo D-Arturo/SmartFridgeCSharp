@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Runtime.InteropServices.JavaScript;
-using JetBrains.Annotations;
-using SmartFridge;
 using Xunit;
 
-namespace SmartFridge.Tests;
+namespace SmartFridge.Tests.Acceptance;
 
-[TestSubject(typeof(SmartFridge))]
 public class SmartFridgeShould
 {
 
