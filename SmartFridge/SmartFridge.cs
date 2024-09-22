@@ -2,6 +2,16 @@
 
 public class SmartFridge
 {
+    public SmartFridge(List<Item> items)
+    {
+        throw new NotImplementedException();
+    }
+
+    public SmartFridge()
+    {
+        
+    }
+
     public string DisplayFridgeState()
     {
         throw new NotImplementedException();
