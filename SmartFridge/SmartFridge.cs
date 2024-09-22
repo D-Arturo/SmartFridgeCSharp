@@ -11,7 +11,7 @@ public class SmartFridge
 
     public SmartFridge()
     {
-        
+        _items = new List<Item>();
     }
 
     public string DisplayFridgeState()
